@@ -1,0 +1,73 @@
+.night-body {
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.night-container {
+  background-color: #DCDCDC;
+}
+
+.container {
+  background-color: white;
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+
+th {
+  text-align: left;
+}
+
+h1 {
+  font: 400 60px Abril Fatface;
+  line-height: 120%;
+  color: #222;
+  padding-bottom: 10px;
+  border-bottom: 3px solid grey;
+}
+
+h2, li, {
+  font: 300 18px/24px "open sans";
+}
+
+h2 {
+  margin-top: 45px;
+}
+
+article, .timestamp {
+  font: 400 16px "open sans";
+  line-height: 24px;
+  color: #666;
+}
+
+.timestamp {
+  margin-bottom: 30px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+section ul {
+  height: 30px;
+}
+
+li.tag {
+  font-style: italic;
+  line-height: 50px;
+  display: inline;
+  list-style: none;
+  padding: 5px 8px;
+  margin: 0px 5px;
+  border: 1px dotted #DCDCDC;
+  color: #444;
+}
