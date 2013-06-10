@@ -17,7 +17,7 @@ end
 end
 
 100.times do
-  Post.create!(title: Faker::Lorem.sentence, body: Faker::Lorem.paragraphs(3).join("<br>"))
+  Post.create!(title: Faker::Lorem.sentence, body: Faker::Lorem.paragraphs(3).join("</p><p>"))
 end
 
 posts = Post.all

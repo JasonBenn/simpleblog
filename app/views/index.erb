@@ -1,9 +1,23 @@
+  <div id='wrapper'>
+    <div id="a"></div>
+    <div id="a2"></div>
+    <div id="b"></div>
+    <div id="b2"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+    <div id="e"></div>
+    <div id="f"></div>
+    <div id="f2"></div>
+    <div id="white-tall"></div>
+    <div id="white-tall2"></div>
+  </div>
 <div class="container">
   <h1>All posts</h1>
+
   <% @posts.reverse_each do |post| %>
     <section>
       <h2><%= post.title %></h2>
-      <article><%= post.body %></article>
+      <article><p><%= post.body %></p></article>
       <ul>
         <% post.tags.each do |tag| %>
         <li class="tag">

@@ -1,4 +1,12 @@
-.night-body {
+.dusk {
+  background-color: #C875E3;
+}
+
+.day {
+  background-color: #254255;
+}
+
+body.night {
   background-color:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -9,16 +17,27 @@
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-.night-container {
+.container.night {
   background-color: #DCDCDC;
 }
 
+#logo {
+  position: absolute;
+  top: 0%;
+  left: -20%;
+  background-color: #7608AA;
+  color: white;
+  border: 3px solid #444;
+  padding: 0 10px 10px 10px;
+}
+
 .container {
+  position: relative;
   background-color: white;
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  box-shadow: 0 0 20px #888;
 }
 
 th {
@@ -69,5 +88,164 @@ li.tag {
   padding: 5px 8px;
   margin: 0px 5px;
   border: 1px dotted #DCDCDC;
+  box-shadow: 0 0 8px #888;
   color: #444;
 }
+
+@keyframes rotate {
+  from { 
+    transform: rotate(0deg)
+               translate(-5px) 
+               rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+               translate(-5px)
+               rotate(-360deg); 
+  }
+};
+
+body {
+  position: relative;
+}
+
+#wrapper {
+  width: 400px;
+  height: 400px;
+  margin-left: 200px;
+  float: left;
+  border-top-left-radius: 150px 50px;
+  border-bottom-right-radius: 150px 50px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  background-color: hsla(222, 95%, 50%, 0.2); 
+  position: relative;
+  box-shadow: 0 0 15px hsla(222, 95%, 50%, 0.5);
+}
+
+#a, #a2, #b, #b2, #c, #d, #e, #f, #f2, #white-tall, #white-tall2 {
+  line-height: 200px;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  opacity: 0.5; 
+  position: absolute;
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 15px white;
+  animation-direction: normal;
+}
+
+#a2, #b2, #d, #f, #white-tall {
+  animation-duration: 10s;
+}
+
+#f2, #e, #a {
+  animation-duration: 8s;
+}
+
+#d {
+  animation-duration: 25s;
+}
+
+#f {
+  animation-duration: 30s;
+}
+
+#b2 {
+  animation-duration: 5s;
+}
+
+/*light purple*/
+#a {
+  height: 87.5%;
+  width: 25%;
+  border-top-right-radius: 50px 100px;
+  top: 5%;
+  left: 24%;
+  box-shadow: 0 0 15px hsla(270, 50%, 50%, 0.5);
+  background-color: hsl(270, 50%, 50%); }
+
+#a2 {
+  height: 350px;
+  width: 75px;
+  top: 0%;
+  left: 30%;
+  border-top-right-radius: 50px 100px;
+  box-shadow: 0 0 15px hsla(270, 50%, 50%, 0.5);
+  background-color: hsl(270, 50%, 50%); }
+
+/*deep green*/
+#b {
+  bottom: 0%;
+  box-shadow: 0 0 15px hsla(149, 50%, 50%, 0.5);
+  background-color: hsl(149, 91%, 50%); }
+
+/*white*/
+#b2 {
+  bottom: 12%;
+  left: 2%;
+  height: 170px;
+  width: 150px;
+  box-shadow: 0 0 15px white;
+  background-color: white; }
+
+#white-tall {
+  bottom: 12%;
+  left: 44%;
+  height: 350px;
+  width: 20px;
+  box-shadow: 0 0 15px white;
+  background-color: white; }
+
+#white-tall2 {
+  bottom: 10%;
+  left: 50%;
+  height: 290px;
+  width: 30px;
+  box-shadow: 0 0 15px white;
+  background-color: white; }
+
+/*light green*/
+#c {
+  border-bottom-left-radius: 175px 175px;
+  right: 0%;
+  bottom: 1%;
+  box-shadow: 0 0 15px hsla(146, 65%, 50%, 0.5);
+  background-color: hsl(146, 65%, 50%); }
+
+/*dark blue*/
+#d {
+  border-bottom-left-radius: 175px 175px;
+  top: 3%;
+  right: 0%;
+  box-shadow: 0 0 15px hsla(222, 95%, 50%, 0.5);
+  background-color: hsl(222, 95%, 50%); }
+
+#e {
+  height: 150px;
+  width: 150px;
+  top: 9%;
+  left: 50%;
+  box-shadow: 0 0 15px hsla(270, 50%, 50%, 0.5);
+  background-color: hsl(270, 50%, 50%); }
+
+#f {
+  height: 150px;
+  width: 150px;
+  bottom: 9%;
+  left: 50%;
+  box-shadow: 0 0 15px hsla(270, 50%, 50%, 0.5);
+  background-color: hsl(270, 50%, 50%); }
+
+#f2 {
+  height: 150px;
+  width: 150px;
+  bottom: 3%;
+  left: 55%;
+  box-shadow: 0 0 15px hsla(151, 70%, 50%, 0.5);
+  background-color: hsl(151, 70%, 50%); }
+
